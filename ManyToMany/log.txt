@@ -1,0 +1,63 @@
+2021-03-31 18:41:37 INFO  Version:44 - HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-03-31 18:41:38 INFO  Version:56 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-31 18:41:38 WARN  pooling:72 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2021-03-31 18:41:38 INFO  pooling:115 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/Akash]
+2021-03-31 18:41:38 INFO  pooling:124 - HHH10001001: Connection properties: {user=sammy, password=****}
+2021-03-31 18:41:38 INFO  pooling:129 - HHH10001003: Autocommit mode: false
+2021-03-31 18:41:38 INFO  DriverManagerConnectionProviderImpl:259 - HHH000115: Hibernate connection pool size: 3 (min=1)
+2021-03-31 18:41:39 INFO  Dialect:175 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-03-31 18:41:40 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6a84bc2a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2021-03-31 18:41:40 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7c974942] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2021-03-31 18:41:40 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-04 17:02:45 INFO  Version:44 - HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-05-04 17:02:46 INFO  Version:56 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-04 17:02:46 WARN  pooling:72 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2021-05-04 17:02:46 INFO  pooling:115 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/Akash]
+2021-05-04 17:02:46 INFO  pooling:124 - HHH10001001: Connection properties: {user=sammy, password=****}
+2021-05-04 17:02:46 INFO  pooling:129 - HHH10001003: Autocommit mode: false
+2021-05-04 17:02:46 INFO  DriverManagerConnectionProviderImpl:259 - HHH000115: Hibernate connection pool size: 3 (min=1)
+2021-05-04 17:02:48 INFO  Dialect:175 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-05-04 17:02:49 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6a84bc2a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2021-05-04 17:02:49 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7c974942] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2021-05-04 17:02:49 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-04 17:12:41 INFO  App:20 - calling constructor for producer
+2021-05-04 17:14:13 INFO  App:20 - calling constructor for producer
+2021-05-04 17:16:25 INFO  App:21 - calling constructor for producer
+2021-05-04 17:17:15 INFO  App:21 - calling constructor for producer
+2021-05-04 17:17:23 INFO  App:21 - calling constructor for producer
+2021-05-04 17:19:07 INFO  App:22 - calling constructor for producer
+2021-05-04 17:19:38 INFO  App:22 - calling constructor for producer
+2021-05-04 17:19:47 INFO  App:22 - calling constructor for producer
+2021-05-04 17:24:52 INFO  App:25 - calling constructor for producer
+2021-05-04 17:25:39 INFO  App:26 - calling constructor for producer
+2021-05-04 17:27:57 INFO  App:26 - calling constructor for producer
+2021-05-04 17:36:29 INFO  App:26 - calling constructor for producer
+2021-05-04 17:53:17 INFO  App:26 - calling constructor for producer
+2021-05-04 17:54:46 INFO  App:26 - calling constructor for producer
+2021-05-04 18:11:21 INFO  App:26 - calling constructor for producer
+2021-05-04 18:12:18 INFO  App:26 - calling constructor for producer
+2021-05-04 18:12:56 INFO  App:26 - calling constructor for producer
+2021-05-04 18:16:17 INFO  App:26 - calling constructor for producer
+2021-05-04 18:16:45 INFO  App:26 - calling constructor for producer
+2021-05-04 18:18:21 INFO  App:26 - calling constructor for producer
+2021-05-04 18:20:35 INFO  App:26 - calling constructor for producer
+2021-05-04 18:20:49 INFO  App:26 - calling constructor for producer
+2021-05-04 18:21:33 INFO  App:26 - calling constructor for producer
+2021-05-04 18:22:01 INFO  App:26 - calling constructor for producer
+2021-05-04 18:22:51 INFO  App:26 - calling constructor for producer
+2021-05-04 18:23:11 INFO  App:26 - calling constructor for producer
+2021-05-04 18:23:26 INFO  App:26 - calling constructor for producer
+2021-05-04 18:23:52 INFO  App:26 - calling constructor for producer
+2021-05-04 18:51:55 INFO  App:26 - calling constructor for producer
+2021-05-04 18:52:05 INFO  App:26 - calling constructor for producer
+2021-05-04 21:12:33 INFO  App:26 - calling constructor for producer
+2021-05-04 21:12:49 INFO  App:26 - calling constructor for producer
+2021-05-04 21:13:02 INFO  App:26 - calling constructor for producer
+2021-05-05 13:23:20 INFO  App:26 - calling constructor for producer
+2021-05-05 13:23:35 INFO  App:26 - calling constructor for producer
+2021-05-05 13:48:05 INFO  App:27 - calling constructor for producer
+2021-05-05 13:51:28 INFO  App:27 - calling constructor for producer
+2021-05-05 14:06:11 INFO  App:26 - calling constructor for producer
+2021-05-05 14:06:22 INFO  Consumer:28 - In consumer 
+2021-05-05 14:06:23 INFO  Consumer:50 - Key: null, Value:Msg data
+2021-05-05 14:06:23 INFO  Consumer:51 - Partition:0,Offset:4

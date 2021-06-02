@@ -1,0 +1,82 @@
+2021-04-12 12:49:49.399  INFO 6442 --- [main] com.scheduling.SchedulingApplication     : Starting SchedulingApplication using Java 1.8.0_282 on ist-860 with PID 6442 (/home/ist/eclipse-workspace/Scheduling/target/classes started by ist in /home/ist/eclipse-workspace/Scheduling)
+2021-04-12 12:49:49.403  INFO 6442 --- [main] com.scheduling.SchedulingApplication     : No active profile set, falling back to default profiles: default
+2021-04-12 12:49:50.224  INFO 6442 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8087 (http)
+2021-04-12 12:49:50.233  INFO 6442 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-12 12:49:50.234  INFO 6442 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-12 12:49:50.235  INFO 6442 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.21] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-04-12 12:49:50.235  INFO 6442 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.21] using APR version [1.6.3].
+2021-04-12 12:49:50.236  INFO 6442 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-12 12:49:50.236  INFO 6442 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-12 12:49:50.238  INFO 6442 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1  11 Sep 2018]
+2021-04-12 12:49:50.280  INFO 6442 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-12 12:49:50.280  INFO 6442 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 835 ms
+2021-04-12 12:49:50.446  INFO 6442 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-12 12:49:50.693  INFO 6442 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-04-12 12:49:50.718  INFO 6442 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8087 (http) with context path ''
+2021-04-12 12:49:50.728  INFO 6442 --- [main] com.scheduling.SchedulingApplication     : Started SchedulingApplication in 1.648 seconds (JVM running for 2.04)
+2021-04-12 12:50:52.766  INFO 6442 --- [http-nio-8087-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-12 12:50:52.766  INFO 6442 --- [http-nio-8087-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-12 12:50:52.767  INFO 6442 --- [http-nio-8087-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-12 12:52:01.642  INFO 6442 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-04-12 12:52:01.652  INFO 6442 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2021-04-12 12:52:01.653  INFO 6442 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-12 12:52:03.132  INFO 6617 --- [main] com.scheduling.SchedulingApplication     : Starting SchedulingApplication using Java 1.8.0_282 on ist-860 with PID 6617 (/home/ist/eclipse-workspace/Scheduling/target/classes started by ist in /home/ist/eclipse-workspace/Scheduling)
+2021-04-12 12:52:03.134  INFO 6617 --- [main] com.scheduling.SchedulingApplication     : No active profile set, falling back to default profiles: default
+2021-04-12 12:52:03.920  INFO 6617 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8087 (http)
+2021-04-12 12:52:03.930  INFO 6617 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-12 12:52:03.930  INFO 6617 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-12 12:52:03.931  INFO 6617 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.21] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-04-12 12:52:03.932  INFO 6617 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.21] using APR version [1.6.3].
+2021-04-12 12:52:03.932  INFO 6617 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-12 12:52:03.932  INFO 6617 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-12 12:52:03.935  INFO 6617 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1  11 Sep 2018]
+2021-04-12 12:52:03.988  INFO 6617 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-12 12:52:03.989  INFO 6617 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 806 ms
+2021-04-12 12:52:04.263  INFO 6617 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-12 12:52:04.442  INFO 6617 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-04-12 12:52:04.467  INFO 6617 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8087 (http) with context path ''
+2021-04-12 12:52:04.477  INFO 6617 --- [main] com.scheduling.SchedulingApplication     : Started SchedulingApplication in 1.711 seconds (JVM running for 2.212)
+2021-04-12 13:31:12.236  INFO 6617 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-04-12 13:31:12.255  INFO 6617 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2021-04-12 13:31:12.257  INFO 6617 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-12 13:31:13.568  INFO 7464 --- [main] com.scheduling.SchedulingApplication     : Starting SchedulingApplication using Java 1.8.0_282 on ist-860 with PID 7464 (/home/ist/eclipse-workspace/Scheduling/target/classes started by ist in /home/ist/eclipse-workspace/Scheduling)
+2021-04-12 13:31:13.571  INFO 7464 --- [main] com.scheduling.SchedulingApplication     : No active profile set, falling back to default profiles: default
+2021-04-12 13:31:14.286  INFO 7464 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8087 (http)
+2021-04-12 13:31:14.295  INFO 7464 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-12 13:31:14.295  INFO 7464 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-12 13:31:14.296  INFO 7464 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.21] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-04-12 13:31:14.297  INFO 7464 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.21] using APR version [1.6.3].
+2021-04-12 13:31:14.297  INFO 7464 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-12 13:31:14.297  INFO 7464 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-12 13:31:14.299  INFO 7464 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1  11 Sep 2018]
+2021-04-12 13:31:14.339  INFO 7464 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-12 13:31:14.339  INFO 7464 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 726 ms
+2021-04-12 13:31:14.500  INFO 7464 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-12 13:31:14.668  INFO 7464 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-04-12 13:31:14.693  INFO 7464 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8087 (http) with context path ''
+2021-04-12 13:31:14.703  INFO 7464 --- [main] com.scheduling.SchedulingApplication     : Started SchedulingApplication in 1.476 seconds (JVM running for 1.874)
+2021-04-12 13:34:06.345  INFO 7464 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-04-12 13:34:06.378  INFO 7464 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2021-04-12 13:34:06.386  INFO 7464 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-12 13:34:07.581  INFO 7709 --- [main] com.scheduling.SchedulingApplication     : Starting SchedulingApplication using Java 1.8.0_282 on ist-860 with PID 7709 (/home/ist/eclipse-workspace/Scheduling/target/classes started by ist in /home/ist/eclipse-workspace/Scheduling)
+2021-04-12 13:34:07.584  INFO 7709 --- [main] com.scheduling.SchedulingApplication     : No active profile set, falling back to default profiles: default
+2021-04-12 13:34:08.327  INFO 7709 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8087 (http)
+2021-04-12 13:34:08.337  INFO 7709 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-12 13:34:08.337  INFO 7709 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-12 13:34:08.338  INFO 7709 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.21] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-04-12 13:34:08.339  INFO 7709 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.21] using APR version [1.6.3].
+2021-04-12 13:34:08.339  INFO 7709 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-12 13:34:08.339  INFO 7709 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-12 13:34:08.341  INFO 7709 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1  11 Sep 2018]
+2021-04-12 13:34:08.382  INFO 7709 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-12 13:34:08.382  INFO 7709 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 757 ms
+2021-04-12 13:34:08.548  INFO 7709 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-12 13:34:08.594  INFO 7709 --- [main] com.scheduling.SchedulingApplication     : CORS is ready
+2021-04-12 13:34:08.715  INFO 7709 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-04-12 13:34:08.741  INFO 7709 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8087 (http) with context path ''
+2021-04-12 13:34:08.751  INFO 7709 --- [main] com.scheduling.SchedulingApplication     : Started SchedulingApplication in 1.509 seconds (JVM running for 1.891)
+2021-04-12 13:34:47.962  INFO 7709 --- [http-nio-8087-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-12 13:34:47.963  INFO 7709 --- [http-nio-8087-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-12 13:34:47.963  INFO 7709 --- [http-nio-8087-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-04-12 22:40:02.679  INFO 7709 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2021-04-12 22:40:03.315  INFO 7709 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'

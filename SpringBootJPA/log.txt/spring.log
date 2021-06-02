@@ -1,0 +1,267 @@
+2021-04-06 13:36:23.578  INFO 8785 --- [main] c.s.test.SpringBootJpaApplication        : Starting SpringBootJpaApplication using Java 1.8.0_282 on ist-860 with PID 8785 (/home/ist/eclipse-workspace/SpringBootJPA/target/classes started by ist in /home/ist/eclipse-workspace/SpringBootJPA)
+2021-04-06 13:36:23.580  INFO 8785 --- [main] c.s.test.SpringBootJpaApplication        : No active profile set, falling back to default profiles: default
+2021-04-06 13:36:24.022  INFO 8785 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-06 13:36:24.077  INFO 8785 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 1 JPA repository interfaces.
+2021-04-06 13:36:24.582  INFO 8785 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-06 13:36:24.644  INFO 8785 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-06 13:36:24.797  INFO 8785 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-06 13:36:24.915  INFO 8785 --- [main] com.zaxxer.hikari.HikariDataSource       : test - Starting...
+2021-04-06 13:36:25.302  INFO 8785 --- [main] com.zaxxer.hikari.HikariDataSource       : test - Start completed.
+2021-04-06 13:36:25.318  INFO 8785 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-04-06 13:36:26.019  INFO 8785 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-06 13:36:26.027  INFO 8785 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-06 13:36:26.033  WARN 8785 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springBootJpaApplication': Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.springjpa.test.SpringBootJpaApplication$$EnhancerBySpringCGLIB$$c528aa2b]: Constructor threw exception; nested exception is java.lang.ClassCastException: ch.qos.logback.classic.Logger cannot be cast to org.apache.logging.log4j.Logger
+2021-04-06 13:36:26.034  INFO 8785 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-06 13:36:26.036  INFO 8785 --- [main] com.zaxxer.hikari.HikariDataSource       : test - Shutdown initiated...
+2021-04-06 13:36:26.041  INFO 8785 --- [main] com.zaxxer.hikari.HikariDataSource       : test - Shutdown completed.
+2021-04-06 13:36:26.048  INFO 8785 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-04-06 13:36:26.064 ERROR 8785 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springBootJpaApplication': Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.springjpa.test.SpringBootJpaApplication$$EnhancerBySpringCGLIB$$c528aa2b]: Constructor threw exception; nested exception is java.lang.ClassCastException: ch.qos.logback.classic.Logger cannot be cast to org.apache.logging.log4j.Logger
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1316) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:769) [spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761) [spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426) [spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326) [spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1313) [spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302) [spring-boot-2.4.4.jar:2.4.4]
+	at com.springjpa.test.SpringBootJpaApplication.main(SpringBootJpaApplication.java:21) [classes/:na]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.springjpa.test.SpringBootJpaApplication$$EnhancerBySpringCGLIB$$c528aa2b]: Constructor threw exception; nested exception is java.lang.ClassCastException: ch.qos.logback.classic.Logger cannot be cast to org.apache.logging.log4j.Logger
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:225) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1308) ~[spring-beans-5.3.5.jar:5.3.5]
+	... 17 common frames omitted
+Caused by: java.lang.ClassCastException: ch.qos.logback.classic.Logger cannot be cast to org.apache.logging.log4j.Logger
+	at com.springjpa.test.SpringBootJpaApplication.<init>(SpringBootJpaApplication.java:16) [classes/:na]
+	at com.springjpa.test.SpringBootJpaApplication$$EnhancerBySpringCGLIB$$c528aa2b.<init>(<generated>) ~[classes/:na]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_282]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_282]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_282]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_282]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:212) ~[spring-beans-5.3.5.jar:5.3.5]
+	... 19 common frames omitted
+
+2021-04-06 13:36:59.561  INFO 8846 --- [main] c.s.test.SpringBootJpaApplication        : Starting SpringBootJpaApplication using Java 1.8.0_282 on ist-860 with PID 8846 (/home/ist/eclipse-workspace/SpringBootJPA/target/classes started by ist in /home/ist/eclipse-workspace/SpringBootJPA)
+2021-04-06 13:36:59.564  INFO 8846 --- [main] c.s.test.SpringBootJpaApplication        : No active profile set, falling back to default profiles: default
+2021-04-06 13:37:00.007  INFO 8846 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-06 13:37:00.060  INFO 8846 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interfaces.
+2021-04-06 13:37:00.517  INFO 8846 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-06 13:37:00.569  INFO 8846 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-06 13:37:00.712  INFO 8846 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-06 13:37:00.828  INFO 8846 --- [main] com.zaxxer.hikari.HikariDataSource       : test - Starting...
+2021-04-06 13:37:01.282  INFO 8846 --- [main] com.zaxxer.hikari.HikariDataSource       : test - Start completed.
+2021-04-06 13:37:01.303  INFO 8846 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-04-06 13:37:02.054  INFO 8846 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-06 13:37:02.063  INFO 8846 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-06 13:37:02.071  WARN 8846 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springBootJpaApplication': Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.springjpa.test.SpringBootJpaApplication$$EnhancerBySpringCGLIB$$627b2ccc]: Constructor threw exception; nested exception is java.lang.ClassCastException: ch.qos.logback.classic.Logger cannot be cast to org.apache.logging.log4j.Logger
+2021-04-06 13:37:02.072  INFO 8846 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-06 13:37:02.075  INFO 8846 --- [main] com.zaxxer.hikari.HikariDataSource       : test - Shutdown initiated...
+2021-04-06 13:37:02.082  INFO 8846 --- [main] com.zaxxer.hikari.HikariDataSource       : test - Shutdown completed.
+2021-04-06 13:37:02.090  INFO 8846 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-04-06 13:37:02.110 ERROR 8846 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springBootJpaApplication': Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.springjpa.test.SpringBootJpaApplication$$EnhancerBySpringCGLIB$$627b2ccc]: Constructor threw exception; nested exception is java.lang.ClassCastException: ch.qos.logback.classic.Logger cannot be cast to org.apache.logging.log4j.Logger
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1316) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:769) [spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761) [spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426) [spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326) [spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1313) [spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302) [spring-boot-2.4.4.jar:2.4.4]
+	at com.springjpa.test.SpringBootJpaApplication.main(SpringBootJpaApplication.java:21) [classes/:na]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.springjpa.test.SpringBootJpaApplication$$EnhancerBySpringCGLIB$$627b2ccc]: Constructor threw exception; nested exception is java.lang.ClassCastException: ch.qos.logback.classic.Logger cannot be cast to org.apache.logging.log4j.Logger
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:225) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1308) ~[spring-beans-5.3.5.jar:5.3.5]
+	... 17 common frames omitted
+Caused by: java.lang.ClassCastException: ch.qos.logback.classic.Logger cannot be cast to org.apache.logging.log4j.Logger
+	at com.springjpa.test.SpringBootJpaApplication.<init>(SpringBootJpaApplication.java:16) [classes/:na]
+	at com.springjpa.test.SpringBootJpaApplication$$EnhancerBySpringCGLIB$$627b2ccc.<init>(<generated>) ~[classes/:na]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_282]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_282]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_282]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_282]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:212) ~[spring-beans-5.3.5.jar:5.3.5]
+	... 19 common frames omitted
+
+2021-04-06 13:38:02.722  INFO 8916 --- [main] c.s.test.SpringBootJpaApplication        : Starting SpringBootJpaApplication using Java 1.8.0_282 on ist-860 with PID 8916 (/home/ist/eclipse-workspace/SpringBootJPA/target/classes started by ist in /home/ist/eclipse-workspace/SpringBootJPA)
+2021-04-06 13:38:02.724  INFO 8916 --- [main] c.s.test.SpringBootJpaApplication        : No active profile set, falling back to default profiles: default
+2021-04-06 13:38:03.186  INFO 8916 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-06 13:38:03.240  INFO 8916 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interfaces.
+2021-04-06 13:38:03.742  INFO 8916 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-06 13:38:03.794  INFO 8916 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-06 13:38:03.932  INFO 8916 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-06 13:38:04.042  INFO 8916 --- [main] com.zaxxer.hikari.HikariDataSource       : test - Starting...
+2021-04-06 13:38:04.447  INFO 8916 --- [main] com.zaxxer.hikari.HikariDataSource       : test - Start completed.
+2021-04-06 13:38:04.461  INFO 8916 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-04-06 13:38:05.189  INFO 8916 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-06 13:38:05.199  INFO 8916 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-06 13:38:05.535  INFO 8916 --- [main] c.s.test.SpringBootJpaApplication        : Started SpringBootJpaApplication in 3.245 seconds (JVM running for 3.599)
+2021-04-06 13:38:05.914  INFO 8916 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-06 13:38:05.916  INFO 8916 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : test - Shutdown initiated...
+2021-04-06 13:38:05.920  INFO 8916 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : test - Shutdown completed.
+2021-04-06 13:38:22.697  INFO 8962 --- [main] c.s.test.SpringBootJpaApplication        : Starting SpringBootJpaApplication using Java 1.8.0_282 on ist-860 with PID 8962 (/home/ist/eclipse-workspace/SpringBootJPA/target/classes started by ist in /home/ist/eclipse-workspace/SpringBootJPA)
+2021-04-06 13:38:22.701  INFO 8962 --- [main] c.s.test.SpringBootJpaApplication        : No active profile set, falling back to default profiles: default
+2021-04-06 13:38:23.129  INFO 8962 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-06 13:38:23.185  INFO 8962 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 1 JPA repository interfaces.
+2021-04-06 13:38:23.641  INFO 8962 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-06 13:38:23.691  INFO 8962 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-06 13:38:23.840  INFO 8962 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-06 13:38:23.932  INFO 8962 --- [main] com.zaxxer.hikari.HikariDataSource       : test - Starting...
+2021-04-06 13:38:24.302  INFO 8962 --- [main] com.zaxxer.hikari.HikariDataSource       : test - Start completed.
+2021-04-06 13:38:24.319  INFO 8962 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-04-06 13:38:25.178  INFO 8962 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-06 13:38:25.187  INFO 8962 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-06 13:38:25.587  INFO 8962 --- [main] c.s.test.SpringBootJpaApplication        : Started SpringBootJpaApplication in 3.325 seconds (JVM running for 3.698)
+2021-04-06 13:38:25.916  INFO 8962 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-06 13:38:25.918  INFO 8962 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : test - Shutdown initiated...
+2021-04-06 13:38:25.928  INFO 8962 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : test - Shutdown completed.
+2021-04-06 13:40:07.301  INFO 9067 --- [main] c.s.test.SpringBootJpaApplication        : Starting SpringBootJpaApplication using Java 1.8.0_282 on ist-860 with PID 9067 (/home/ist/eclipse-workspace/SpringBootJPA/target/classes started by ist in /home/ist/eclipse-workspace/SpringBootJPA)
+2021-04-06 13:40:07.304  INFO 9067 --- [main] c.s.test.SpringBootJpaApplication        : No active profile set, falling back to default profiles: default
+2021-04-06 13:40:07.745  INFO 9067 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-06 13:40:07.805  INFO 9067 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 1 JPA repository interfaces.
+2021-04-06 13:40:08.260  INFO 9067 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-06 13:40:08.306  INFO 9067 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-06 13:40:08.433  INFO 9067 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-06 13:40:08.527  INFO 9067 --- [main] com.zaxxer.hikari.HikariDataSource       : test - Starting...
+2021-04-06 13:40:08.899  INFO 9067 --- [main] com.zaxxer.hikari.HikariDataSource       : test - Start completed.
+2021-04-06 13:40:08.920  INFO 9067 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-04-06 13:40:09.810  INFO 9067 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-06 13:40:09.822  INFO 9067 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-06 13:40:10.214  INFO 9067 --- [main] c.s.test.SpringBootJpaApplication        : Started SpringBootJpaApplication in 3.372 seconds (JVM running for 3.783)
+2021-04-06 13:40:10.582  INFO 9067 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-06 13:40:10.584  INFO 9067 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : test - Shutdown initiated...
+2021-04-06 13:40:10.589  INFO 9067 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : test - Shutdown completed.
+2021-04-06 13:44:28.858  INFO 9340 --- [main] c.s.test.SpringBootJpaApplication        : Starting SpringBootJpaApplication using Java 1.8.0_282 on ist-860 with PID 9340 (/home/ist/eclipse-workspace/SpringBootJPA/target/classes started by ist in /home/ist/eclipse-workspace/SpringBootJPA)
+2021-04-06 13:44:28.862  INFO 9340 --- [main] c.s.test.SpringBootJpaApplication        : No active profile set, falling back to default profiles: default
+2021-04-06 13:44:29.294  INFO 9340 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-06 13:44:29.356  INFO 9340 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 1 JPA repository interfaces.
+2021-04-06 13:44:29.819  INFO 9340 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-06 13:44:29.871  INFO 9340 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-06 13:44:30.010  INFO 9340 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-06 13:44:30.123  INFO 9340 --- [main] com.zaxxer.hikari.HikariDataSource       : test - Starting...
+2021-04-06 13:44:30.479  INFO 9340 --- [main] com.zaxxer.hikari.HikariDataSource       : test - Start completed.
+2021-04-06 13:44:30.500  INFO 9340 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-04-06 13:44:31.327  INFO 9340 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-06 13:44:31.335  INFO 9340 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-06 13:44:31.678  INFO 9340 --- [main] c.s.test.SpringBootJpaApplication        : Started SpringBootJpaApplication in 3.241 seconds (JVM running for 3.612)
+2021-04-06 13:44:32.037  INFO 9340 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-06 13:44:32.039  INFO 9340 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : test - Shutdown initiated...
+2021-04-06 13:44:32.048  INFO 9340 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : test - Shutdown completed.
+2021-04-06 13:48:25.701  INFO 9536 --- [main] c.s.test.SpringBootJpaApplication        : Starting SpringBootJpaApplication using Java 1.8.0_282 on ist-860 with PID 9536 (/home/ist/eclipse-workspace/SpringBootJPA/target/classes started by ist in /home/ist/eclipse-workspace/SpringBootJPA)
+2021-04-06 13:48:25.703  INFO 9536 --- [main] c.s.test.SpringBootJpaApplication        : No active profile set, falling back to default profiles: default
+2021-04-06 13:48:26.134  INFO 9536 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-06 13:48:26.185  INFO 9536 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interfaces.
+2021-04-06 13:48:26.656  INFO 9536 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-06 13:48:26.705  INFO 9536 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-06 13:48:26.836  INFO 9536 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-06 13:48:26.954  INFO 9536 --- [main] com.zaxxer.hikari.HikariDataSource       : test - Starting...
+2021-04-06 13:48:27.323  INFO 9536 --- [main] com.zaxxer.hikari.HikariDataSource       : test - Start completed.
+2021-04-06 13:48:27.343  INFO 9536 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-04-06 13:48:28.183  INFO 9536 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-06 13:48:28.191  INFO 9536 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-06 13:48:28.524  INFO 9536 --- [main] c.s.test.SpringBootJpaApplication        : Started SpringBootJpaApplication in 3.263 seconds (JVM running for 3.597)
+2021-04-06 13:48:28.961  INFO 9536 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-06 13:48:28.963  INFO 9536 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : test - Shutdown initiated...
+2021-04-06 13:48:28.968  INFO 9536 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : test - Shutdown completed.
+2021-04-06 13:53:49.681  INFO 9758 --- [main] c.s.test.SpringBootJpaApplication        : Starting SpringBootJpaApplication using Java 1.8.0_282 on ist-860 with PID 9758 (/home/ist/eclipse-workspace/SpringBootJPA/target/classes started by ist in /home/ist/eclipse-workspace/SpringBootJPA)
+2021-04-06 13:53:49.683  INFO 9758 --- [main] c.s.test.SpringBootJpaApplication        : No active profile set, falling back to default profiles: default
+2021-04-06 13:53:50.150  INFO 9758 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-06 13:53:50.213  INFO 9758 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interfaces.
+2021-04-06 13:53:50.722  INFO 9758 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-06 13:53:50.773  INFO 9758 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-06 13:53:50.911  INFO 9758 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-06 13:53:51.032  INFO 9758 --- [main] com.zaxxer.hikari.HikariDataSource       : test - Starting...
+2021-04-06 13:53:51.651  INFO 9758 --- [main] com.zaxxer.hikari.HikariDataSource       : test - Start completed.
+2021-04-06 13:53:51.683  INFO 9758 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-04-06 13:53:52.432  INFO 9758 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-06 13:53:52.441  INFO 9758 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-06 13:53:52.767  INFO 9758 --- [main] c.s.test.SpringBootJpaApplication        : Started SpringBootJpaApplication in 3.547 seconds (JVM running for 3.954)
+2021-04-06 13:53:53.225  INFO 9758 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-06 13:53:53.232  INFO 9758 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : test - Shutdown initiated...
+2021-04-06 13:53:53.260  INFO 9758 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : test - Shutdown completed.
+2021-04-06 13:54:25.463  INFO 9829 --- [main] c.s.test.SpringBootJpaApplication        : Starting SpringBootJpaApplication using Java 1.8.0_282 on ist-860 with PID 9829 (/home/ist/eclipse-workspace/SpringBootJPA/target/classes started by ist in /home/ist/eclipse-workspace/SpringBootJPA)
+2021-04-06 13:54:25.465  INFO 9829 --- [main] c.s.test.SpringBootJpaApplication        : No active profile set, falling back to default profiles: default
+2021-04-06 13:54:25.924  INFO 9829 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-06 13:54:25.983  INFO 9829 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interfaces.
+2021-04-06 13:54:26.434  INFO 9829 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-06 13:54:26.476  INFO 9829 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-06 13:54:26.601  INFO 9829 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-06 13:54:26.719  INFO 9829 --- [main] com.zaxxer.hikari.HikariDataSource       : test - Starting...
+2021-04-06 13:54:27.282  INFO 9829 --- [main] com.zaxxer.hikari.HikariDataSource       : test - Start completed.
+2021-04-06 13:54:27.306  INFO 9829 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-04-06 13:54:28.080  INFO 9829 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-06 13:54:28.089  INFO 9829 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-06 13:54:28.448  INFO 9829 --- [main] c.s.test.SpringBootJpaApplication        : Started SpringBootJpaApplication in 3.448 seconds (JVM running for 3.822)
+2021-04-06 13:54:28.908  INFO 9829 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-06 13:54:28.909  INFO 9829 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : test - Shutdown initiated...
+2021-04-06 13:54:28.914  INFO 9829 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : test - Shutdown completed.
+2021-04-06 14:34:21.142  INFO 10942 --- [main] c.s.test.SpringBootJpaApplication        : Starting SpringBootJpaApplication using Java 1.8.0_282 on ist-860 with PID 10942 (/home/ist/eclipse-workspace/SpringBootJPA/target/classes started by ist in /home/ist/eclipse-workspace/SpringBootJPA)
+2021-04-06 14:34:21.144  INFO 10942 --- [main] c.s.test.SpringBootJpaApplication        : No active profile set, falling back to default profiles: default
+2021-04-06 14:34:21.562  INFO 10942 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-06 14:34:21.620  INFO 10942 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interfaces.
+2021-04-06 14:34:22.114  INFO 10942 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-06 14:34:22.163  INFO 10942 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-06 14:34:22.306  INFO 10942 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-06 14:34:22.405  INFO 10942 --- [main] com.zaxxer.hikari.HikariDataSource       : test - Starting...
+2021-04-06 14:34:22.783  INFO 10942 --- [main] com.zaxxer.hikari.HikariDataSource       : test - Start completed.
+2021-04-06 14:34:22.799  INFO 10942 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-04-06 14:34:23.546  INFO 10942 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-06 14:34:23.556  INFO 10942 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-06 14:34:23.950  INFO 10942 --- [main] c.s.test.SpringBootJpaApplication        : Started SpringBootJpaApplication in 3.242 seconds (JVM running for 3.588)
+2021-04-06 14:34:24.318  INFO 10942 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-06 14:34:24.319  INFO 10942 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : test - Shutdown initiated...
+2021-04-06 14:34:24.323  INFO 10942 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : test - Shutdown completed.
+2021-04-06 14:43:14.775  INFO 11388 --- [main] c.s.test.SpringBootJpaApplication        : Starting SpringBootJpaApplication using Java 1.8.0_282 on ist-860 with PID 11388 (/home/ist/eclipse-workspace/SpringBootJPA/target/classes started by ist in /home/ist/eclipse-workspace/SpringBootJPA)
+2021-04-06 14:43:14.778  INFO 11388 --- [main] c.s.test.SpringBootJpaApplication        : No active profile set, falling back to default profiles: default
+2021-04-06 14:43:15.534  INFO 11388 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-06 14:43:15.594  INFO 11388 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interfaces.
+2021-04-06 14:43:16.265  INFO 11388 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-06 14:43:16.337  INFO 11388 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-06 14:43:16.568  INFO 11388 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-06 14:43:16.732  INFO 11388 --- [main] com.zaxxer.hikari.HikariDataSource       : test - Starting...
+2021-04-06 14:43:17.273  INFO 11388 --- [main] com.zaxxer.hikari.HikariDataSource       : test - Start completed.
+2021-04-06 14:43:17.304  INFO 11388 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-04-06 14:43:18.476  INFO 11388 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-06 14:43:18.492  INFO 11388 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-06 14:43:19.029  INFO 11388 --- [main] c.s.test.SpringBootJpaApplication        : Started SpringBootJpaApplication in 4.833 seconds (JVM running for 6.92)
+2021-04-06 22:22:30.425  INFO 28899 --- [main] c.s.test.SpringBootJpaApplication        : Starting SpringBootJpaApplication using Java 1.8.0_282 on ist-860 with PID 28899 (/home/ist/eclipse-workspace/SpringBootJPA/target/classes started by ist in /home/ist/eclipse-workspace/SpringBootJPA)
+2021-04-06 22:22:30.438  INFO 28899 --- [main] c.s.test.SpringBootJpaApplication        : No active profile set, falling back to default profiles: default
+2021-04-06 22:22:31.907  INFO 28899 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-06 22:22:32.038  INFO 28899 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 1 JPA repository interfaces.
+2021-04-06 22:22:32.906  INFO 28899 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-06 22:22:32.982  INFO 28899 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-06 22:22:33.401  INFO 28899 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-06 22:22:33.542  INFO 28899 --- [main] com.zaxxer.hikari.HikariDataSource       : test - Starting...
+2021-04-06 22:22:34.351  INFO 28899 --- [main] com.zaxxer.hikari.HikariDataSource       : test - Start completed.
+2021-04-06 22:22:34.437  INFO 28899 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-04-06 22:22:35.977  INFO 28899 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-06 22:22:36.004  INFO 28899 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-06 22:22:36.664  INFO 28899 --- [main] c.s.test.SpringBootJpaApplication        : Started SpringBootJpaApplication in 7.061 seconds (JVM running for 8.391)
+2021-04-06 22:22:37.255  INFO 28899 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-06 22:22:37.258  INFO 28899 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : test - Shutdown initiated...
+2021-04-06 22:22:37.288  INFO 28899 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : test - Shutdown completed.

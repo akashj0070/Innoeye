@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+  
+           <hibernate-mapping>  
+          <class name="com.hibernate.onetomany.College" table="College">  
+          <id name="collegeId">  
+          <generator class="increment"></generator>  
+          </id>  
+           <property name="collegeName"></property>  
+            
+          <one-to-many name="Students" cascade="all"></one-to-many>  
+          </class>  
+            
+ </hibernate-mapping>  

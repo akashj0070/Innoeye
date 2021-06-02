@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?> 
+<hibernate-mapping>
+
+	  <class name="com.hibernate.HibernateExample.EmpAccount" table="EmpAccount">
+  <id name="Id">
+	<generator class="assigned"></generator>
+	</id>
+	<one-to-one name="employees" class="com.hibernate.HibernateExample.Employees" />
+	<property name="AccountNumber"></property>
+	<property name="AccountHolderName"></property>
+  </class>
+
+</hibernate-mapping>

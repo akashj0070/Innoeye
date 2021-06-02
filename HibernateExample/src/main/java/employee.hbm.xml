@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>    
+ <hibernate-mapping>  
+  <class name="com.hibernate.HibernateExample.Employees" table="Employees">  
+    <id name="id">  
+     <generator class="assigned"></generator>  
+    </id>  
+            
+    <property name="firstName"></property>  
+    <property name="lastName"></property>  
+    <one-to-one name="empAccount" 
+    class="com.hibernate.HibernateExample.EmpAccount" cascade="save-update"/>    
+  </class>  
+
+            
+ </hibernate-mapping>
